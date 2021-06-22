@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-holder">
+        <img class="women-image" alt="woman-image" />
+      </div>
+      <img
+        src=""
+        alt="box-image"
+        class="desktop-box-image"
+        style="display: none"
+      />
+      <section class="faq-section">
+        <h1>FAQ</h1>
+
+        <ul>
+          <li class="qst-container" onclick="showAnswer(this)">
+            <div class="question">
+              <p class="qst">How many team members can I invite?</p>
+              <p class="ans">
+                You can invite up to 2 additional users on the Free plan.There
+                is no limit on team members for the Premium plan.
+              </p>
+            </div>
+            <img src="images/icon-arrow-down.svg" alt="arrow-down" />
+          </li>
+          <li class="qst-container" onclick="showAnswer(this)">
+            <div class="question">
+              <p class="qst">What is the maximum file upload size?</p>
+              <p class="ans">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
+            </div>
+            <img src="images/icon-arrow-down.svg" alt="arrow-down" />
+          </li>
+          <li class="qst-container" onclick="showAnswer(this)">
+            <div class="question">
+              <p class="qst">How do I reset my password?</p>
+              <p class="ans">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
+            </div>
+            <img src="images/icon-arrow-down.svg" alt="arrow-down" />
+          </li>
+          <li class="qst-container" onclick="showAnswer(this)">
+            <div class="question">
+              <p class="qst">Can I cancel my subscription?</p>
+              <p class="ans">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
+            </div>
+            <img src="images/icon-arrow-down.svg" alt="arrow-down" />
+          </li>
+          <li class="qst-container" onclick="showAnswer(this)">
+            <div class="question">
+              <p class="qst">Do you provide additional support?</p>
+              <p class="ans">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
+            </div>
+            <img src="images/icon-arrow-down.svg" alt="arrow-down" />
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <img
+      src="images/bg-pattern-desktop.svg"
+      alt="pattern desktop"
+      class="desktop-pattern"
+    />
+    <img
+      src="images/bg-pattern-mobile.svg"
+      alt="pattern mobile"
+      class="mobile-pattern"
+    />
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/FatimahFarooq">Fatima Farooq</a>.
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
