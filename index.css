@@ -141,9 +141,9 @@ ul {
   .desktop-box-image {
     content: url("images/illustration-box-desktop.svg");
     position: absolute;
-    top: 36em;
+    top: 34.25em;
     /* top: 43em; */
-    left: 22.75em;
+    left: 27em;
     z-index: 2;
     display: block !important;
   }
