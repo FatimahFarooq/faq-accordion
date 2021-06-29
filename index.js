@@ -3,8 +3,11 @@
 // });
 
 const showAnswer = (obj) => {
-  //   alert(obj);
+  // console.log(obj);
   qst_container = obj;
+  answers = document.getElementsByClassName("show-answers");
+
+  // answer.display = "none";
 
   var arrow_down = qst_container.lastElementChild;
   if (arrow_down.classList.contains("flip-arrow")) {
