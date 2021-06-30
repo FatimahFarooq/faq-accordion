@@ -1,4 +1,4 @@
-const showAnswer = (obj) => {
+function showAnswer(obj) {
   qst_container = obj;
 
   var previous_faq = document.getElementById("previous-ans");
@@ -32,4 +32,4 @@ const showAnswer = (obj) => {
     ans_div.classList.add("show-answer");
     ans_div.setAttribute("id", "previous-ans");
   }
-};
+}
