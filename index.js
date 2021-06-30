@@ -1,13 +1,12 @@
-// const what = () => ({
-//     alert("hello");
-// });
-
 const showAnswer = (obj) => {
-  // console.log(obj);
   qst_container = obj;
-  answers = document.getElementsByClassName("show-answers");
 
-  // answer.display = "none";
+  var previous_faq = document.getElementById("previous-ans");
+  if (previous_faq) {
+    previous_faq.classList.remove("show-answer");
+    previous_faq.previousElementSibling.classList.remove("bold-qst");
+    previous_faq.removeAttribute("id", "previous-ans");
+  }
 
   var arrow_down = qst_container.lastElementChild;
   if (arrow_down.classList.contains("flip-arrow")) {
@@ -15,7 +14,7 @@ const showAnswer = (obj) => {
   } else {
     arrow_down.classList.add("flip-arrow");
   }
-  // arrow_down.style.transform = "rotate(180deg)";
+
   question_div = qst_container.firstElementChild;
 
   qst_div = question_div.firstElementChild;
@@ -25,14 +24,12 @@ const showAnswer = (obj) => {
     qst_div.classList.add("bold-qst");
   }
 
-  // qst_div.style.fontWeight = 700;
-  // qst_div.style.color = "hsl(238, 29%, 16%)";
-
   ans_div = question_div.lastElementChild;
+
   if (ans_div.classList.contains("show-answer")) {
     ans_div.classList.remove("show-answer");
   } else {
     ans_div.classList.add("show-answer");
+    ans_div.setAttribute("id", "previous-ans");
   }
-  // ans_div.style.display = "block";
 };
