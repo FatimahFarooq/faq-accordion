@@ -85,7 +85,9 @@ hr {
 .qst:hover {
   color: var(--soft-red);
   cursor: pointer;
+  transition: left 2s;
 }
+
 .ans {
   display: none;
   color: var(--dark-grayish-blue);
@@ -101,6 +103,9 @@ hr {
 }
 .flip-arrow {
   transform: rotate(180deg);
+}
+.desktop-box-image {
+  display: none;
 }
 
 .attribution {
@@ -153,6 +158,11 @@ hr {
     left: 26.5em;
     z-index: 5;
     display: block !important;
+  }
+
+  .qst:hover #float {
+    transform: rotate(45deg);
+    transition: 5s;
   }
 
   .women-image {
