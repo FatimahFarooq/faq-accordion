@@ -44,7 +44,7 @@ body {
 }
 
 .desktop-pattern {
-  display: none;
+  /* display: none; */
 }
 .container {
   border-radius: 15px;
@@ -136,9 +136,8 @@ hr {
 
   .desktop-pattern {
     position: absolute;
-    top: 15em;
-    left: 5em;
-    display: none;
+    top: -25.5em;
+    left: -52em;
   }
   .img-holder {
     display: flex;

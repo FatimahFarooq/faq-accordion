@@ -2,11 +2,6 @@ function showAnswer(obj) {
   qst_container = obj;
 
   var previous_faq = document.getElementById("previous-ans");
-  if (previous_faq) {
-    previous_faq.classList.remove("show-answer");
-    previous_faq.previousElementSibling.classList.remove("bold-qst");
-    previous_faq.removeAttribute("id", "previous-ans");
-  }
 
   var arrow_down = qst_container.lastElementChild;
   if (arrow_down.classList.contains("flip-arrow")) {
@@ -31,5 +26,13 @@ function showAnswer(obj) {
   } else {
     ans_div.classList.add("show-answer");
     ans_div.setAttribute("id", "previous-ans");
+  }
+  if (previous_faq) {
+    previous_faq.parentElement.nextElementSibling.classList.remove(
+      "flip-arrow"
+    );
+    previous_faq.classList.remove("show-answer");
+    previous_faq.previousElementSibling.classList.remove("bold-qst");
+    previous_faq.removeAttribute("id", "previous-ans");
   }
 }
