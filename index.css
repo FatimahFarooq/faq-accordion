@@ -108,6 +108,10 @@ hr {
   display: none;
 }
 
+.desktop-pattern {
+  display: none;
+}
+
 .attribution {
   margin-top: 5em;
   font-size: 11px;
